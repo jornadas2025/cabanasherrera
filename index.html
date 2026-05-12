@@ -13,21 +13,33 @@
 
 <body>
 
-    <header class="header">
+	<header class="header">
 
-        <div class="logo-container">
-            <img src="img/logo.png" alt="Logo Cabañas Herrera">
-            <h1>CABAÑAS HERRERA MAZAMITLA</h1>
-        </div>
+		<div class="logo-container">
+			<img src="img/logo.png" alt="Logo Cabañas Herrera">
+			<h1>CABAÑAS HERRERA MAZAMITLA</h1>
+		</div>
 
-        <nav class="menu">
-            <a href="#inicio">Inicio</a>
-            <a href="#cabanas">Cabañas</a>
-            <a href="#comunes">Áreas comunes</a>
+		<!-- BOTÓN HAMBURGUESA -->
+		<div class="hamburger" id="hamburger">
+
+			<span></span>
+			<span></span>
+			<span></span>
+
+		</div>
+
+		<!-- MENÚ -->
+		<nav class="menu" id="menu">
+
+			<a href="#inicio">Inicio</a>
+			<a href="#cabanas">Cabañas</a>
+			<a href="#comunes">Áreas comunes</a>
 			<a href="#contacto">Contacto</a>
-        </nav>
 
-    </header>
+		</nav>
+
+	</header>
 
     <section class="hero" id="inicio">
 
@@ -192,6 +204,33 @@
         });
 
     </script>
+
+	<script>
+
+		const hamburger = document.getElementById('hamburger');
+		const menu = document.getElementById('menu');
+
+		hamburger.addEventListener('click', () => {
+
+			hamburger.classList.toggle('active');
+			menu.classList.toggle('active');
+
+		});
+
+		// CERRAR MENÚ AL HACER CLICK
+
+		document.querySelectorAll('.menu a').forEach(link => {
+
+			link.addEventListener('click', () => {
+
+				hamburger.classList.remove('active');
+				menu.classList.remove('active');
+
+			});
+
+		});
+
+	</script>
 
 </body>
 </html>
