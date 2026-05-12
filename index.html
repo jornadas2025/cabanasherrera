@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CABAÑAS HERRERA MAZAMITLA</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="logo-container">
+            <img src="img/logo.png" alt="Logo Cabañas Herrera">
+            <h1>CABAÑAS HERRERA MAZAMITLA</h1>
+        </div>
+
+        <nav class="menu">
+            <a href="#inicio">Inicio</a>
+            <a href="#cabanas">Cabañas</a>
+            <a href="#comunes">Áreas comunes</a>
+			<a href="#contacto">Contacto</a>
+        </nav>
+
+    </header>
+
+    <section class="hero" id="inicio">
+
+        <div class="hero-overlay">
+
+            <h2>Descansa entre la naturaleza</h2>
+
+            <p>
+                Vive una experiencia única en Mazamitla, tranquilidad, bosque y confort.
+            </p>
+
+            <a href="#cabanas" class="btn">Ver Cabañas</a>
+
+        </div>
+
+    </section>
+
+    <section class="cabanas" id="cabanas">
+
+        <div class="titulo-seccion">
+            <h2>Nuestras Cabañas</h2>
+        </div>
+
+        <div class="cabana-card">
+
+            <div class="cabana-info">
+
+                <h3>Cabaña Alpina</h3>
+				<h4>Cabaña Romántica</h4>
+				<ul>
+                    <li>✔ 1 Habitación</li>
+					<li>✔ Cama King Size</li>
+                    <li>✔ Capacidad 2 personas</li>					
+                    <li>✔ Chimenea</li>
+                    <li>✔ Cocina equipada</li>
+                    <li>✔ Wifi</li>
+                    <li>✔ Smart TV</li>
+                    <li>✔ Jacuzzi</li>
+					<li>✔ Asador</li>
+					<li>✔ Fogareto</li>
+                </ul>
+
+            </div>
+
+            <div class="cabana-galeria">
+
+                <div class="swiper mySwiper">
+
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <img src="img/cabana1_1.jpg" alt="">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="img/cabana1_2.jpg" alt="">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="img/cabana1_3.jpg" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="comunes" id="comunes">
+
+        <div class="titulo-seccion">
+            <h2>Áreas Comunes</h2>
+        </div>
+
+        <div class="comunes-grid">
+
+            <div class="comun">
+                <img src="img/fogatero.jpg" alt="">
+                <h3>Fogatero</h3>
+            </div>
+
+            <div class="comun">
+                <img src="img/terraza.jpg" alt="">
+                <h3>Terraza</h3>
+            </div>
+
+            <div class="comun">
+                <img src="img/juegos.jpg" alt="">
+                <h3>Área de Juegos</h3>
+            </div>
+
+            <div class="comun">
+                <img src="img/asadores.jpg" alt="">
+                <h3>Asadores</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+	<section class="contacto" id="contacto">
+
+    <div class="contacto-box">
+
+        <h2>Vive Mazamitla diferente</h2>
+
+        <p>
+            Reserva tu próxima escapada premium y disfruta noches inolvidables
+            rodeado de bosque, tranquilidad y diseño moderno.
+        </p>
+
+        <div class="contacto-botones">
+
+            <a href="https://wa.me/523324580228"
+               target="_blank"
+               class="btn btn-whatsapp">
+               Reservar Ahora
+            </a>
+
+            <a href="https://maps.app.goo.gl/w5NQKpHTC5Cxnv81A"
+               target="_blank"
+               class="btn btn-maps">
+               Cómo Llegar
+            </a>
+
+        </div>
+
+    </div>
+
+	</section>
+
+    <footer class="footer">
+
+        <p>
+            © 2026 CABAÑAS HERRERA MAZAMITLA
+        </p>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+
+        const swiper = new Swiper(".mySwiper", {
+
+            loop: true,
+
+            autoplay: {
+                delay: 3000,
+            },
+
+            pagination: {
+                el: ".swiper-pagination",
+            },
+
+        });
+
+    </script>
+
+</body>
+</html>
