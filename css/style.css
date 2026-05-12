@@ -713,7 +713,7 @@ section{
 
     border-radius:50%;
 
-    background:#25D366;
+    background:#edf5f0;
 
     display:flex;
 
@@ -735,9 +735,9 @@ section{
 
 .whatsapp-float img{
 
-    width:35px;
+    width:75px;
 
-    height:35px;
+    height:75px;
 }
 
 /* BOTÓN LLAMAR */
