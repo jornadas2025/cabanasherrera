@@ -95,6 +95,55 @@ body{
 }
 
 /* =========================
+   HAMBURGUESA
+========================= */
+
+.hamburger{
+
+    display:none;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    gap:6px;
+
+    cursor:pointer;
+
+    z-index:2000;
+}
+
+.hamburger span{
+
+    width:30px;
+
+    height:3px;
+
+    background:#333;
+
+    border-radius:20px;
+
+    transition:0.3s;
+}
+
+/* ANIMACIÓN */
+
+.hamburger.active span:nth-child(1){
+
+    transform:translateY(9px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2){
+
+    opacity:0;
+}
+
+.hamburger.active span:nth-child(3){
+
+    transform:translateY(-9px) rotate(-45deg);
+}
+
+/* =========================
    HERO
 ========================= */
 
@@ -516,61 +565,6 @@ section{
     }
 }
 
-@media(max-width:900px){
-
-    .header{
-
-        flex-direction:column;
-
-        gap:18px;
-
-        padding:20px;
-    }
-
-    .menu{
-
-        flex-wrap:wrap;
-
-        justify-content:center;
-
-        gap:18px;
-    }
-
-    .hero h2{
-
-        font-size:2.7rem;
-    }
-
-    .hero p{
-
-        font-size:1.05rem;
-    }
-
-    .cabana-card{
-
-        padding:25px;
-    }
-
-    .cabana-info{
-
-        order:1;
-    }
-
-    .cabana-galeria{
-
-        order:2;
-    }
-
-    .swiper{
-
-        height:300px;
-    }
-
-    .ubicacion-box{
-
-        padding:40px 25px;
-    }
-}
 
 /* =========================
    CONTACTO
@@ -679,6 +673,130 @@ section{
 }
 
 /* RESPONSIVE */
+
+@media(max-width:900px){
+
+    /* HEADER */
+
+    .header{
+
+        padding:15px 20px;
+
+        flex-direction:row;
+    }
+
+    .logo-container{
+
+        gap:10px;
+    }
+
+    .logo-container img{
+
+        width:60px;
+    }
+
+    .logo-container h1{
+
+        font-size:0.85rem;
+
+        line-height:1.2;
+    }
+
+    /* HAMBURGUESA */
+
+    .hamburger{
+
+        display:flex;
+    }
+
+    /* MENÚ */
+
+    .menu{
+
+        position:fixed;
+
+        top:0;
+
+        right:-100%;
+
+        width:280px;
+
+        height:100vh;
+
+        background:#ffffff;
+
+        flex-direction:column;
+
+        justify-content:center;
+
+        align-items:center;
+
+        gap:35px;
+
+        transition:0.4s;
+
+        box-shadow:-5px 0 20px rgba(0,0,0,0.1);
+
+        z-index:1500;
+    }
+
+    .menu.active{
+
+        right:0;
+    }
+
+    .menu a{
+
+        font-size:1.1rem;
+    }
+
+    /* HERO */
+
+    .hero h2{
+
+        font-size:2.7rem;
+    }
+
+    .hero p{
+
+        font-size:1.05rem;
+    }
+
+    /* CABAÑAS */
+
+    .cabana-card{
+
+        grid-template-columns:1fr;
+
+        padding:25px;
+
+        gap:30px;
+    }
+
+    .cabana-info{
+
+        order:1;
+    }
+
+    .cabana-galeria{
+
+        order:2;
+    }
+
+    .swiper{
+
+        height:300px;
+    }
+
+    /* CONTACTO */
+
+    .contacto-box{
+
+        padding:40px 25px;
+    }
+}
+
+
 
 @media(max-width:700px){
 
