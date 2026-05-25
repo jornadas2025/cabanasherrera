@@ -300,17 +300,17 @@ section{
 
     display:grid;
 
-    grid-template-columns:40% 55%;
+    grid-template-columns:43% 55%;
 
-    gap:40px;
+    gap:20px;
 
     align-items:center;
 
     background:#fff;
 
-    border-radius:25px;
+    border-radius:10px;
 
-    padding:40px;
+    padding:20px;
 
     box-shadow:0 10px 30px rgba(0,0,0,0.06);
 
@@ -334,10 +334,25 @@ section{
     padding-right:10px;
 }
 
+.cabana-info p{
+
+    font-size:1.1rem;
+
+	line-height:1.4;
+		
+    margin-bottom:10px;
+
+    color:#333;
+	
+	text-align: justify;
+}
+
 .cabana-info h3{
 
-    font-size:2.5rem;
+    font-size:1.7rem;
 
+	line-height:.5;
+		
     margin-bottom:25px;
 
     color:#333;
@@ -346,13 +361,15 @@ section{
 .cabana-info h4{
 
     font-size:1.2rem;
+	
+	line-height:.5;
 
-    margin-bottom:25px;
+    margin-bottom:20px;
 
     color:#333;
 }
 .cabana-info ul{
-	
+		
 	display:grid;
 
     grid-template-columns:50% 50%;
@@ -370,7 +387,7 @@ section{
 
     font-size:1rem;
 
-    line-height:1.4;
+    line-height:1.5;
 
     color:#555;
 
@@ -448,12 +465,12 @@ section{
    COMUNES
 ========================= */
 
-.comunes{
+.amanidades{
 
     background:#fafafa;
 }
 
-.comunes-grid{
+.amenidades-grid{
 
     display:grid;
 
@@ -462,7 +479,7 @@ section{
     gap:30px;
 }
 
-.comun{
+.amenidad{
 
     background:#fff;
 
@@ -475,12 +492,12 @@ section{
     transition:0.3s;
 }
 
-.comun:hover{
+.amenidad:hover{
 
     transform:translateY(-6px);
 }
 
-.comun img{
+.amenidad img{
 
     width:100%;
 
@@ -491,7 +508,7 @@ section{
     display:block;
 }
 
-.comun h3{
+.amenidad h3{
 
     padding:22px;
 
@@ -652,6 +669,7 @@ section{
     flex-wrap:wrap;
 }
 
+
 /* BOTÓN WHATSAPP */
 
 .btn-whatsapp{
@@ -714,6 +732,101 @@ section{
     background:#000;
 
     transform:translateY(-2px);
+}
+
+/* =========================
+   INSTAGRAM FLOTANTE
+========================= */
+
+.instagram-float{
+
+    position:fixed;
+
+    right:20px;
+
+    bottom:180px;
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:50%;
+
+    background:#edf5f0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.25);
+
+    z-index:3000;
+
+    transition:0.3s;
+}
+
+.instagram-float:hover{
+
+    transform:scale(1.1);
+}
+
+.instagram-float img{
+
+    width:90px;
+
+    height:90px;
+
+    object-fit:contain;
+}
+
+
+/* =========================
+   FACEBOOK FLOTANTE
+========================= */
+
+.facebook-float{
+
+    position:fixed;
+
+    right:20px;
+
+    bottom:100px;
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:50%;
+
+    background:#edf5f0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.25);
+
+    z-index:3000;
+
+    transition:0.3s;
+}
+
+.facebook-float:hover{
+
+    transform:scale(1.1);
+}
+
+.facebook-float img{
+
+    width:90px;
+
+    height:90px;
+
+    object-fit:contain;
 }
 
 /* =========================
