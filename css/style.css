@@ -462,6 +462,79 @@ section{
 }
 
 /* =========================
+   FLECHAS SWIPER
+========================= */
+
+.swiper-button-next,
+.swiper-button-prev{
+
+    width:auto;
+
+    height:auto;
+
+    background:transparent;
+
+    border:none;
+
+    box-shadow:none;
+
+    transition:0.3s;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover{
+
+    transform:scale(1.15);
+}
+
+/* ICONOS */
+
+.swiper-button-next::after,
+.swiper-button-prev::after{
+
+    font-size:42px;
+
+    color:#ff9f43;
+
+    font-weight:900;
+
+    text-shadow:0 2px 10px rgba(0,0,0,0.35);
+
+    transition:0.3s;
+}
+/* POSICIÓN */
+
+.swiper-button-next{
+
+    right:15px;
+}
+
+.swiper-button-prev{
+
+    left:15px;
+}
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+    .swiper-button-next,
+    .swiper-button-prev{
+
+        width:42px;
+
+        height:42px;
+    }
+
+    .swiper-button-next::after,
+    .swiper-button-prev::after{
+
+        font-size:16px;
+    }
+}
+
+
+/* =========================
    COMUNES
 ========================= */
 
