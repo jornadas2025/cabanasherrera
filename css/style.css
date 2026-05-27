@@ -514,6 +514,55 @@ section{
     left:15px;
 }
 
+/* =========================
+   FANCYBOX
+========================= */
+
+.fancybox__container{
+
+    z-index:99999;
+}
+
+/* FONDO */
+
+.fancybox__backdrop{
+
+    background:rgba(0,0,0,0.96);
+}
+
+/* BOTONES */
+
+.fancybox__toolbar .f-button,
+.fancybox__nav .f-button{
+
+    color:#ff9f43 !important;
+
+    background:transparent !important;
+
+    border:none !important;
+
+    box-shadow:none !important;
+}
+
+/* FLECHAS */
+
+.fancybox__nav .f-button svg{
+
+    width:42px;
+
+    height:42px;
+
+    stroke-width:2.5;
+}
+
+/* HOVER */
+
+.fancybox__nav .f-button:hover{
+
+    transform:scale(1.1);
+}
+
+
 /* MOBILE */
 
 @media(max-width:700px){
