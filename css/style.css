@@ -261,7 +261,7 @@ section{
 
 .titulo-seccion h2{
 
-    font-size:2.7rem;
+    font-size:2.6rem;
 
     color:#444;
 
@@ -718,6 +718,125 @@ section{
 }
 
 /* =========================
+   ESPECIALES
+========================= */
+
+.especiales{
+
+    background:#f8f8f8;
+}
+
+.especiales-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
+
+    gap:35px;
+
+    margin-top:50px;
+}
+
+.video-card{
+
+    background:#fff;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+
+    transition:0.3s;
+}
+
+.video-card:hover{
+
+    transform:translateY(-8px);
+}
+
+.video-card video{
+
+    width:100%;
+
+    height:320px;
+
+    object-fit:cover;
+
+    display:block;
+
+    background:#000;
+}
+
+.video-info{
+
+    padding:25px;
+}
+
+.video-info h3{
+
+    font-size:1.4rem;
+
+    margin-bottom:15px;
+
+    color:#333;
+}
+
+.video-info p{
+
+    color:#666;
+
+    line-height:1.7;
+
+    font-size:1rem;
+}
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+    .video-card video{
+
+        height:240px;
+    }
+
+    .video-info{
+
+        padding:20px;
+    }
+
+    .video-info h3{
+
+        font-size:1.2rem;
+    }
+}
+
+
+/* =========================
+   RECORRIDOS
+========================= */
+
+.recorridos{
+
+    background:#f8f8f8;
+}
+
+.recorridos-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
+
+    gap:35px;
+
+    margin-top:50px;
+}
+
+
+
+/* =========================
    CONTACTO
 ========================= */
 
@@ -824,9 +943,7 @@ section{
     color:#222;
 }
 
-/* =========================
-   BOTÓN RESERVAR CABAÑA
-========================= */
+/* BOTÓN RESERVAR CABAÑA */
 
 .btn-reservar{
 
@@ -850,6 +967,36 @@ section{
 }
 
 .btn-reservar:hover{
+
+    background:#000;
+
+    transform:translateY(-2px);
+}
+
+/* BOTÓN VERIFICAR */
+
+.btn-verif{
+
+    display:inline-block;
+
+    margin-top:25px;
+
+    background:#333;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    padding:14px 28px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:0.3s;
+}
+
+.btn-verif:hover{
 
     background:#000;
 
